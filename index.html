@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      body {  
+      background-image: linear-gradient(to right,white, rgb(112, 203, 239), rgb(61, 61, 241));      
+    }
+    .flex {
+        display: flex;
+      }
+      .container {
+        width: 1200px;
+        height: 75vh;
+        margin:0 auto;
+        padding: 32px 64px;
+        margin-top:84px;
+        background-image: linear-gradient(to left,white, rgb(112, 203, 239), rgb(127, 127, 250));   
+        border: solid 3px #dedeaa;
+        box-shadow: 5px 5px 60px black;
+      }
+      .page{
+        flex-direction: column;
+      }
+      .header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding:0 64px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+  
+    .logo img{
+      cursor: pointer;
+      border: 2px solid blue;
+      border-radius: 50%;
+     
+    }
+      .unli{
+          align-items: center;
+          justify-content: space-around;
+          gap:38px;
+          list-style: none;
+          color:#333;
+          cursor: pointer;
+        }
+        .unli li{
+            border: 2px solid rgb(158, 158, 250);
+            border-radius: 30px;
+            padding: 5px;
+            background-image: linear-gradient(to right,white,aqua);
+        }
+
+        .unli li:hover{
+            color:#000;
+            text-shadow:0.5px 0.5px 0.5px #333;
+        }
+        .signUp{
+            color:#333;
+            cursor: pointer;
+            
+        }
+        .signUp:hover{
+            color:#000;
+            text-shadow:0.5px 0.5px 0.5px #333;
+        }
+    .text-page{
+
+        gap:44px;
+        padding: 32px; 
+    }
+    .text-page-text{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:12px;
+        gap:32px;
+    }
+    h1{
+        font-size: 64px;
+        background-image: linear-gradient(to left,white,  blueviolet, rgb(61, 61, 241)); 
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    h3{
+        font-size:32px;
+        padding-bottom: 20px;
+    }
+    span{
+        background-image: linear-gradient(to right,skyblue,aqua,blueviolet);
+        font-size:44px;
+        padding:0 12px;
+        display: inline-block;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transform: skewX(-20deg);
+        
+    }
+    .knowMore{
+        font-size:18px;
+        text-transform: uppercase;
+        padding-top:16px;
+        cursor: pointer;
+    }
+    .yoga-img{
+      width:560px;
+      height:580px;
+      background-color: #fffff2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }   
+      .yoga-img img{
+        transform: perspective(10px) translateZ(-1px) scale(1);
+        border:3px solid #dedeaa;
+        width:560px; 
+        height:580px;
+        border-radius: 50%;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container flex">
+      <div class="page flex">
+      <div class="header flex">
+        <div class="logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfYH__JpDhJKI75J9RbEEfHwhQvPHEWC37Jg&s" width="150px" />
+        </div>
+        <nav class="nav">
+          <ul class="unli flex">
+            <li>home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </nav>
+        <div class="signUp">Sign Up</div>
+    </div>
+    <div class="text-page flex">
+        <div class="text-page-text flex">
+            <h1>Travelling</h1>
+            <h3> Embrace new <span>experiences</span>, try new foods, and soak up the local culture. Make <span>memories</span>  and have fun!
+            </h3>
+            
+            <div class="knowMore">Know More &rarr;</div>
+        </div>
+        <div class="yoga-img">
+          <img src="https://images.pexels.com/photos/1157255/pexels-photo-1157255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+           
+           />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
